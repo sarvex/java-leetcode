@@ -1,0 +1,14 @@
+{
+    "git.ignoreLimitWarning": true,
+    "workbench.colorCustomizations": {
+        "sash.hoverBorder": "#54787f",
+        "statusBar.background": "#405b60",
+        "statusBar.border": "#405b60",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#54787f",
+        "statusBarItem.remoteBackground": "#405b60",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "tab.activeBorder": "#54787f"
+    },
+    "peacock.color": "#405b60"
+}
