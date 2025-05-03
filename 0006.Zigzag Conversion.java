@@ -1,18 +1,30 @@
-class Solution {
-    public String convert(String s, int numRows) {
-        if (numRows == 1) {
-            return s;
-        }
-        StringBuilder[] g = new StringBuilder[numRows];
-        Arrays.setAll(g, k -> new StringBuilder());
-        int i = 0, k = -1;
-        for (char c : s.toCharArray()) {
-            g[i].append(c);
-            if (i == 0 || i == numRows - 1) {
-                k = -k;
-            }
-            i += k;
-        }
-        return String.join("", g);
+
+import java.util.*;
+
+public final class Solution {
+  /**
+   * Simulate zigzag row traversal and collect characters efficiently.
+   *
+   * @intuition: Place each character in the appropriate row, switching direction
+   *             at the top and bottom.
+   * @approach: Use an array of StringBuilder, iterate through the input, and
+   *            append to the correct row, reversing direction as needed.
+   * @complexity: Time O(n), Space O(n)
+   */
+  public String convert(final String s, final int numRows) {
+    if (numRows == 1 || s.length() <= numRows)
+      return s;
+    final var rows = new StringBuilder[numRows];
+
+    Arrays.setAll(rows, i -> new StringBuilder());
+    int row = 0, step = 1;
+
+    for (final char c : s.toCharArray()) {
+      rows[row].append(c);
+      if (row == 0 || row == numRows - 1)
+        step = -step;
+      row += step;
     }
+    return String.join("", rows);
+  }
 }

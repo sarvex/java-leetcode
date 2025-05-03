@@ -13,5 +13,9 @@
     "peacock.color": "#405b60",
     "cSpell.words": [
         "nums"
-    ]
+    ],
+    "sonarlint.connectedMode.project": {
+        "connectionId": "sarvex",
+        "projectKey": "sarvex_java-leetcode"
+    }
 }
