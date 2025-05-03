@@ -1,0 +1,21 @@
+# .clang-format for Java (industry best practices, LLVM style base)
+BasedOnStyle: LLVM
+Language: Java
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+ColumnLimit: 120
+AllowShortFunctionsOnASingleLine: Inline
+BreakBeforeBraces: Attach
+SortIncludes: true
+IncludeBlocks: Preserve
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignTrailingComments: true
+SpacesInParentheses: false
+SpaceAfterCStyleCast: false
+SpaceBeforeParens: ControlStatements
+PointerAlignment: Left
+ReflowComments: true
+JavaImportGroups: ["java", "javax", "org", "com"]
+# Add or adjust rules as needed for your team/project

@@ -10,5 +10,8 @@
         "statusBarItem.remoteForeground": "#e7e7e7",
         "tab.activeBorder": "#54787f"
     },
-    "peacock.color": "#405b60"
+    "peacock.color": "#405b60",
+    "cSpell.words": [
+        "nums"
+    ]
 }
